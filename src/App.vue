@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <file-manager />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FileManager from './components/Layout/FileManager.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FileManager
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+
+* {
+  box-sizing: border-box;
 }
+
+html{
+  height: 100%;
+body{
+  height: inherit;
+  margin: 0;
+#app{
+  height: inherit;
+  }
+}
+}
+
 </style>
